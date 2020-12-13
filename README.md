@@ -15,3 +15,12 @@ More a learning playground than anything else. Code will be correct (I hope) but
   ```
 
 * **tic_tac_toe_ia**: A Tic Tac Toe game using a Minimax algorithm. Nothing special, just for fun.
+
+* **contact_book**: Small DB (in memory) and a bit of regexp. Special attention to the groups in regular expression. It is not the same `(,\\s)*` than `[,\\s]+` or `(,\\s)+`. First one matches groups and matches groups with `None`.
+  ```python
+  re.split(',(\\s)*', 'qwer,qwer,qwer,qwer') >>> ['qwer', None, 'qwer', None, 'qwer', None, 'qwer']
+  
+  re.split('[,\\s]+', 'qwer, qwer  ,qwer  , qwer') >>> ['qwer', 'qwer', 'qwer', 'qwer']
+  
+  re.split(',(\\s)+', 'qwer,qwer,qwer,qwer') >>> ['qwer,qwer,qwer,qwer']
+  ```
