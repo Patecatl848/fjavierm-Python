@@ -24,3 +24,5 @@ More a learning playground than anything else. Code will be correct (I hope) but
   
   re.split(',(\\s)+', 'qwer,qwer,qwer,qwer') >>> ['qwer,qwer,qwer,qwer']
   ```
+
+* **subdomain_discovery**: Tool to discover subdomains for a given domain. Works with a wordlist given as argument or file. Read files, argparse, thread executor.
